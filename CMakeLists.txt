@@ -64,10 +64,10 @@ if(nanopb_BUILD_GENERATOR)
             DESTINATION ${PYTHON_INSTDIR}/proto/
         )
     endforeach()
-endif()
 
-install( FILES generator/proto/_utils.py
-         DESTINATION ${PYTHON_INSTDIR}/proto/ )
+    install( FILES generator/proto/_utils.py
+             DESTINATION ${PYTHON_INSTDIR}/proto/ )
+endif()
 
 if( WIN32 )
         install(
